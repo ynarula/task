@@ -1,162 +1,85 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<title>Agora Vote</title>
-	<link href="https://agora-frontend.herokuapp.com/assets/agora.png" rel="icon">
-	  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="index.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Sanchez&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Maven+Pro&display=swap" rel="stylesheet">
-</head>
-<body>
-<div class="ago">
-<center>
-<img src="https://agora-frontend.herokuapp.com/assets/agora.png" width="500" height="500">
-<br>
-<br>
-<h1 style="font-family: 'Roboto Slab', serif; font-size: 96px;">AGORA</h1>
-<br>
-<br><br>
-</center>
-<div class="container purple topBotomBordersIn">
-  <a href="index.html">HOME</a>
-  <a href="#signin">SIGN IN</a>
-  <a href="#about">ABOUT</a>
-  <a href="#contact">CONTACT</a>
-</div>
-<br><br>
-<br><br>
-</div>
-<br>
-<div>
-<center>
-<table>
-<tr>
-<th><h1 style="font-family: 'Sanchez', serif; float: left;">AGORA</h1></th>
-</tr>
-<tr>
-<td>
-<img src="https://agora-frontend.herokuapp.com/assets/vote.png">
-</td>
-<td>
-<p>
-<center>
-<h2 class="vot">
-Agora vote is a voting platform where users can create<br>
- elections and invite friends to cast their votes.
-<br><br>
-It supports a wide range of voting algorithms some of<br> 
-which are Majority, Egalitarian, Australian STV just to <br>
-name a few
-<br><br><br>
-  <button type="button" class="btn btn-success"><a href="http://aossie.org/" class="lea">Learn More</a></button>
-</h2>
-</center>
-</p>
-</td>
-</tr>
-</table>
-</center>
-</div>
-<div>
-<center>
-<h1 style=" font-family: 'Sanchez', serif; color: #fff;"  id= "about">About</h1>
-<h2 class="vot">
-Agora vote is a voting platform where users can create<br>
- elections and invite friends to cast their votes.
-<br><br>
-It supports a wide range of voting algorithms some of <br>
-which are Majority, Egalitarian, Australian STV just to <br>
-name a few
-<br><br><br>
-<br>
-<button type="button" class="btn btn-success"><a href="http://aossie.org/" class="lea">Learn More</a></button>
-<br><br>
-<h1 style=" font-family: 'Sanchez', serif; color: #fff;" id="contact">Contact Us</h1>
-<h2 class="vot">
-Please use our Gitter Channels to communicate with us.
-<br><br>
-<b>
-We would love to here from you!
-</b>
-<br><br><br><br>
-  <button type="button" class="btn btn-success"><a href="http://aossie.org/" class="lea">Learn More</a></button>
-</center>
-</h2>
-</div>
-<div style="background-image: linear-gradient(to right, #ffd152 ,#ffd04f, #ebc049,#e3b946);">
-<br>
-<center>
-<h1 style="font-family: 'Roboto Slab';" id="signin">Sign In</h1>
-<br>
-<h2 class="vot">Create your account</h2>
-<form action="/auth/action_page.php">
-  <div class="containeer">
-    <h1>Register</h1>
-    <p>Please fill in this form to create an account.</p>
-    <hr>
-<label for="First"><b>First Name</b></label>
-<br>
-    <input type="text" placeholder="Enter First Name" name="First" required>
-<br>    
-    <label for="Second"><b>Second Name</b></label>
-    <br>
-	<input type="text" placeholder="Enter Second Name" name="Second" required>
-    <br>
-    <label for="email"><b>Email</b></label>
-    <br>
-	<input type="text" placeholder="Enter Email" name="email" required>
-<br>
-    <label for="psw"><b>Password</b></label>
-    <br>
-	<input type="password" placeholder="Enter Password" name="psw" required>
-<br>
-<label for="sq"><b>Security Question</b></label>
-<br>
-<select _ngcontent-sc7="" class="containeer" name="securityQuestion" required="" selectedindex="-1" value="Select Security Question" style="border: 0px; border-radius: 20px;"><option _ngcontent-sc7="">Select Security Question</option><option _ngcontent-sc7="">What was your childhood nickname?</option><option _ngcontent-sc7="">What is the name of your favorite childhood friend?</option><option _ngcontent-sc7="">What is your oldest sibling's middle name?</option><option _ngcontent-sc7="">In what city or town was your first job?</option><option _ngcontent-sc7="">What was the last name of your third grade teacher?</option></select>
-<br>
-    <label for="security"><b>Security Answer</b></label>
-    <br>
-	<input type="text" placeholder="Security Answer" name="security" required>
-      <br>
-	  <button type="submit" class="registerbtn">Register</button>
-  </div>
-</form>
-<br>
-<h1 class="vot">OR</h1>
-<br>
-<button onclick="document.getElementById('id01').style.display='block'" style="width:auto; border-radius: 10px;"><b style="font-family: 'Maven Pro';">Sign In</b></button>
-<div id="id01" class="modal">
-  
-  <form class="modal-content animate" action="/auth/action_page.php" method="post">
-    <div class="imgcontainer">
-      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-    </div>
+<!DOCTYPE HTML>
 
-    <div id="container">
-      <label for="uname"><b>Username</b></label>
-	  <br>
-      <input type="text" placeholder="Enter Username" name="uname" required>
-		<br>
-      <label for="psw"><b>Password</b></label>
-      <br>
-	  <input type="password" placeholder="Enter Password" name="psw" required>
-        <br>
-      <button type="submit" style="background-image: linear-gradient(to right,  #3bffaa, #38eb9d, #34d18d, #2fbd7f); border-radius: 10px; opacity: 1;">Login</button>
-    </div>
-    <div id="container" style="background-color:#000;">
-      <span class="psw"><a href="#" style="color: white;">Forgot password?</a></span>
-         <a href="#" class="fb btn">
-          <i class="fa fa-facebook fa-fw"></i> Login with Facebook
-         </a>
-</div>
+<html>
+	<head>
+		<title>Open MRS | Sign Up</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />s
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-wide.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div class="wrapper style1">
+
+				<!-- Header -->
+					<div id="header" class="skel-panels-fixed">
+						<div id="logo">
+							<h1><a href="index.html">Open MRS</a></h1>						</div>
+					</div>
+
+				<!-- Banner -->
+					<div id="banner" class="container">
+						<section>
+							<p>Fill the form given below.</p>
+						</section>
+					</div>
+	<!-- Footer -->
+		<div id="footer" class="wrapper style1">
+			<div class="container">
+				<section>
+					<header class="major">
+						<h2>Form</h2>
+					</header>
+					<form method="post" action="/auth/action_page.php" method="post">
+					   
+						<div class="row half">
+							<div class="12u">
+								<input class="text" type="text" name="name" id="name" placeholder="Username" />
+							</div>
+						</div>
+						<div class="row half">
+							<div class="12u">
+								<input class="text" type="text" name="email" id="email" placeholder="Task Count" />
+							</div>
+						</divs
+					</div>
+					<br>
+						<div class="row half">
+							<div class="12u">
+								<ul class="actions">
+									<li>
+										<button onclick="document.getElementById('id01').style.display='block'" type="submit" value="Send Message" class="button alt" />
+										Send Message
+										</button>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</form>
+				</section>
+			</div>
+		</div>
+    <div id="id01">
+	<h2>
+	<center>
+    Congratulations! Toutes nos félicitations! Herzliche Glückwünsche! Congratulazioni! Felicidades! Aloha ʻoe! 恭喜你！축하합니다! Blahoželáme! Поздравляем!
+<br>
+For the sign up!
 </center>
-  </form>
+</h2>
 </div>
-</center>
-</body>
+	</body>
 </html>
